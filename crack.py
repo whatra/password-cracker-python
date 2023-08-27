@@ -122,7 +122,7 @@ def crack_pass_file(fn_pass,words,out):
     # crack untransformed strings first
     for d in encryptedPasswords:
         for w in words:
-            if( check_pass(w, d['password']) ): # write "username=pass"
+            if( check_pass(w, d['password']) ): # write "username=pass"kadra_qurux_
                 outputFile.write( '{}={}\n'.format(d['account'], w) )
                 encryptedPasswords.remove( d ) #remove entry from future cracks
                 outputFile.flush() # output file flushed after each line
